@@ -1,0 +1,69 @@
+/* 
+   TodoApp Styles
+   These styles provide the visual layout and appearance for the Todo application.
+*/
+
+/* Reset default browser styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100vw;
+}
+
+/* App title styling */
+.container h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Form container styling */
+form {
+    width: 400px;
+    position: relative;
+}
+
+/* Task input field styling */
+form #task-input {
+    padding: 8px;
+    width: 100%;
+}
+
+/* Add button styling */
+form button {
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    left: 89%;
+}
+
+/* Task list container styling */
+.tasks {
+    width: 400px;
+    margin-top: 10px;
+}
+
+/* Individual task styling */
+.task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Add spacing between tasks */
+.task:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.task-buttons .btn-task {
+    cursor: pointer;
+}
