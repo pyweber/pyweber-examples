@@ -2,6 +2,12 @@
 
 This repository contains example applications built with PyWeber, a Python web framework for building interactive web applications using pure Python.
 
+### Examples
+Bellow, get all examples projects made with pyweber.
+* [TodoApp](https://github.com/pyweber/pyweber-examples/tree/master/TodoApp)
+* [ClockApp](https://github.com/pyweber/pyweber-examples/tree/master/ClockApp)
+* [LoginApp](https://github.com/pyweber/pyweber-examples/tree/master/LoginApp)
+
 ## Getting Started
 
 ### Prerequisites
@@ -12,22 +18,26 @@ This repository contains example applications built with PyWeber, a Python web f
 ### Installation
 
 1. Install PyWeber:
+
    ```bash
    pip install pyweber
    ```
 
 2. Clone this examples repository:
+
    ```bash
    git clone https://github.com/pyweber/pyweber-examples.git
    cd pyweber-examples
    ```
 
 3. Choose an example and navigate to its directory:
+
    ```bash
-   cd todoapp
+   cd pyweber-example
    ```
 
 4. Install any example-specific dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
