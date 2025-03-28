@@ -10,7 +10,7 @@ class Input(pw.Element):
     Creates a styled text input with appropriate attributes.
     """
     def __init__(self):
-        super().__init__(name='input')
+        super().__init__(tag='input')
         self.attrs = {'type': 'text', 'name': 'task', 'placeholder': 'add your task'}
         self.id = 'task-input'
 
@@ -23,7 +23,7 @@ class Button(pw.Element):
         event: The event handler to attach to the button
     """
     def __init__(self, value: str, event: pw.Events = None):
-        super().__init__(name='button')
+        super().__init__(tag='button')
         self.classes = ['btn-task']
         self.content = value
         self.events = event
@@ -37,16 +37,16 @@ class Task(pw.Element):
         task: The text content of the task
     """
     def __init__(self, task: str):
-        super().__init__(name='div')
+        super().__init__(tag='div')
         self.classes = ['task']
         self.childs = [
             pw.Element(
-                name='p',
+                tag='p',
                 classes=['task-text'],
                 content=task
             ),
             pw.Element(
-                name='span',
+                tag='span',
                 classes=['task-buttons'],
                 childs=[
                     Button(value='Edit', event=pw.Events(onclick=self.edit_task)),
@@ -91,16 +91,16 @@ class TodoForm(pw.Element):
     Contains the title, input form, and task list.
     """
     def __init__(self):
-        super().__init__(name='div')
+        super().__init__(tag='div')
         self.classes = ['container']
         self.childs = [
             pw.Element(
-                name='h2',
+                tag='h2',
                 classes=['title'],
                 content='Todo App'
             ),
             pw.Element(
-                name='form',
+                tag='form',
                 attrs={'method': 'dialog'},
                 childs=[
                     Input(),
@@ -113,7 +113,7 @@ class TodoForm(pw.Element):
                 ]
             ),
             pw.Element(
-                name='div',
+                tag='div',
                 classes=['tasks'],
                 childs=[]
             )

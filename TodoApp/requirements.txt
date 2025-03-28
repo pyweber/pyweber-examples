@@ -1,1 +1,1 @@
-pyweber>=0.7.0
+pyweber>=0.8.1
