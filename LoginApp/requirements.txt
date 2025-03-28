@@ -1,0 +1,2 @@
+manage-sql>=1.0.4
+pyweber>=0.8.1
