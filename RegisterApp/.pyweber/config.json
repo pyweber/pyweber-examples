@@ -1,0 +1,35 @@
+{
+    "app": {
+        "name": "RegisterApp",
+        "version": "0.1.0",
+        "description": "A RegisterApp builded with pyweber framework",
+        "icon": "/_pyweber/static/favicon.ico"
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 8800,
+        "route": "/"
+    },
+    "websocket": {
+        "host": "localhost",
+        "port": 8765
+    },
+    "database": {
+        "type": "",
+        "name": "",
+        "username": "",
+        "password": "",
+        "host": "",
+        "port": "",
+        "dsn": "",
+        "ssl": ""
+    },
+    "api_keys": {},
+    "session": {
+        "secret_key": "c70d1aa7e060c2779e317f9a67505d7ac5adb7a04983f9923a2a11d5f71868dc",
+        "timeout": 3600,
+        "reload_mode": true,
+        "env": "development"
+    },
+    "requirements": []
+}
