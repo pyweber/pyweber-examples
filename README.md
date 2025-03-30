@@ -7,6 +7,7 @@ Bellow, get all examples projects made with pyweber.
 * [TodoApp](https://github.com/pyweber/pyweber-examples/tree/master/TodoApp)
 * [ClockApp](https://github.com/pyweber/pyweber-examples/tree/master/ClockApp)
 * [LoginApp](https://github.com/pyweber/pyweber-examples/tree/master/LoginApp)
+* [RegisterApp](https://github.com/pyweber/pyweber-examples/tree/master/RegisterApp)
 
 ## Getting Started
 
@@ -85,19 +86,52 @@ PyWeber applications can be configured using a `config.json` file in the project
 
 ```json
 {
-  "app": {
-    "name": "My PyWeber App",
-    "debug": true,
-    "icon": "/static/favicon.ico"
-  },
-  "server": {
-    "host": "localhost",
-    "port": 8000
-  },
-  "websocket": {
-    "host": "localhost",
-    "port": 8765
-  }
+    "app": {
+        "name": "ProjectExample",
+        "version": "0.1.0",
+        "description": "Small description",
+        "icon": "path_to_favicon"
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 8800,
+        "route": "/",
+        "logg": ""
+    },
+    "websocket": {
+        "host": "localhost",
+        "port": 8765
+    },
+    "database": {
+        "users": {
+            "type": "sqlite",
+            "name": "banco",
+            "username": "",
+            "password": "",
+            "host": "",
+            "port": "",
+            "dsn": "",
+            "ssl": ""
+        },
+        "requests": {
+            "type": "sqlite",
+            "name": "banco",
+            "username": "",
+            "password": "",
+            "host": "",
+            "port": "",
+            "dsn": "",
+            "ssl": ""
+        }
+    },
+    "api_keys": {},
+    "session": {
+        "secret_key": "77d373d333c7b767fde01e982157fd2279aa4a0bbca106f05fababc4c6937dff",
+        "timeout": 3600,
+        "reload_mode": true,
+        "env": "development"
+    },
+    "requirements": []
 }
 ```
 
